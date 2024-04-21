@@ -25,8 +25,9 @@
     <div class="main">
       <h1 class="headings">I AM <br>ALMAS AINA</h1>
       <button class="btn">
-        Hire Me
+        <a href="#about" style="text-decoration: none; color: inherit;">About Me</a>
       </button>
+      
     </div>
   </section>
 
@@ -119,7 +120,8 @@
 
   <section id="contact">
     <h1 class="headings">CONTACT</h1>
-    <form action="" onsubmit="sendEmail(); reset(); return false;" class="form">
+    <form action="https://api.web3forms.com/submit" method="POST" class="form">
+      <input type="hidden" name="access_key" value="f738c725-2726-428b-ac44-14236e2474c0">
       <input type="text" id="Name" name="name" class="input" placeholder="Enter Your Name" required>
       <input type="email" name="email" class="input" id="email" placeholder="Enter Your Email" required>
       <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
@@ -128,7 +130,7 @@
   </section>
 
   <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script src="contact.js"></script>
+  <!-- <script src="contact.js"></script> -->
 </body>
 
 </html>
