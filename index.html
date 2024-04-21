@@ -1,133 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <style>
-    /* Custom CSS */
-    /* Add your custom styles here */
-  </style>
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media="screen and (max-width: 800px)"  href="table.css">
+  <link rel="stylesheet" media="screen and (max-width: 530px)" href="phone.css">
 </head>
-<body>
 
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">My Portfolio</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#portfolio">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#services">Projects</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
   </nav>
 
-  <!-- Hero Section -->
-  <section id="hero" class="bg-light py-5 text-center">
-    <div class="container">
-      <h1>Welcome to My Portfolio</h1>
-      <p class="lead">I'm a web developer passionate about creating amazing websites.</p>
+  <section id="home">
+    <div class="main">
+      <h1 class="headings">I AM <br>ALMAS AINA</h1>
+      <button class="btn">
+        Hire Me
+      </button>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">About Me</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dolor nec arcu aliquet vulputate. Integer varius condimentum metus, in viverra neque cursus in. Sed commodo nisi eget lectus ultrices, a lacinia velit ullamcorper. Nullam molestie sit amet felis at maximus.</p>
-        </div>
-        <div class="col-md-6">
-          <p>Phasellus nec lobortis elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer elementum purus a nunc luctus, ac tincidunt lorem bibendum. Ut mattis metus nec elit feugiat aliquet.</p>
-        </div>
+  <section id="about">
+    <h1 class="headings">ABOUT ME</h1>
+    <div id="pic">
+      <img src="about.PNG" alt="">
+      <div id="intro">
+        <h2>ALMAS AINA</h2>
+        <p>
+          Hi, I'm Almas Aina, a dedicated programmer and computer science student. Throughout my academic journey, I've
+          completed numerous semester projects that allowed me to gain hands-on experience with different programming
+          languages and technologies. My skills include C, C++, Python, HTML, CSS, JavaScript, SQL, and Assembly. I
+          enjoy solving complex problems and developing efficient, innovative software solutions.
+          <br><br>
+          My coursework has provided me with a strong foundation in software development principles, and I take pride in
+          writing clean, maintainable code. I love learning new technologies and applying my knowledge to real-world
+          projects. My work spans various areas, including web development, data analysis, and low-level programming.
+          <br><br>
+          I'm eager to connect with other professionals and collaborate on projects that make a positive impact. Let's
+          work together to create exceptional software solutions and push the boundaries of what's possible!
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="bg-light py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Portfolio</h2>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Project 1</h5>
-              <p class="card-text">Description of Project 1</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Project 2</h5>
-              <p class="card-text">Description of Project 2</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Project 3</h5>
-              <p class="card-text">Description of Project 3</p>
-            </div>
-          </div>
-        </div>
+  <section id="portfolio">
+    <h1 class="headings">PORTFOLIO</h1>
+    <div class="gallery">
+      <img src="assembly.jpg" alt="">
+      <img src="python.jpg" alt="">
+      <img src="snake_assembly.jpg" alt="">
+      <img src="tic_cpp.jpg" alt="">
+      <img src="sql.jpg" alt="">
+      <img src="html.jpg" alt="">
+    </div>
+  </section>
+  <section id="services">
+    <h1 class="headings">PROJECTS</h1>
+    <div class="row">
+      <div class="box">
+        <h1 class="headings">C#</h1>
+        <p><b>1- Snake Game:</b><br>This C# project features a Snake game where players control a snake on a grid,
+          collecting food to grow longer while avoiding walls and itself. The game offers smooth controls and a scoring
+          system. <br><br><b>2- Tic-Tac-Toe</b><br>This game allows two players to take turns placing symbols on a 3x3
+          grid. The goal is to form a line of three symbols to win. It's simple and easy to play.</p>
+      </div>
+      <div class="box">
+        <h1 class="headings">C++</h1>
+        <p><b>1- Text Editor</b> <br>This C++ project lets users create, edit, and save text files with cut, copy,
+          paste, and undo features. It stores text in compressed form and decodes it for editing. The editor offers a
+          smooth, user-friendly experience. <br><br>
+          <b>2- Contact Book</b><br>This C++ application manages contacts by allowing users to add, edit, and delete
+          entries. It supports groups and keeps a history of interactions, offering efficient organization and quick
+          search.
+        </p>
+      </div>
+      <div class="box">
+        <h1 class="headings">Python</h1>
+        <p><b>1- N-Queen Puzzle</b><br>
+          This Python project solves the N-Queen puzzle, placing N queens on an N x N chessboard without attacks. It
+          uses algorithms to find and display solutions visually.
+          <br><br>
+          <b>2- 15 Puzzle</b>This Python project solves the 15 puzzle, a sliding puzzle with a 4x4 grid. The goal is to
+          arrange tiles in numerical order. It uses search algorithms for optimal solutions.
+          <br><br>
+          <b>3-Tic-Tac-Toe</b>This Python project is a classic 3x3 Tic-Tac-Toe game for two players. Players aim to form
+          a line of three symbols to win. An AI opponent may be available for single-player mode.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="box">
+        <h1 class="headings">Assembly language</h1>
+        <p><b>1- Snake Game in NASM</b>This project uses NASM assembly language to create the classic Snake game. Players control a snake on a grid, collecting food to grow longer while avoiding collisions with walls or itself. The game features smooth movement and a scoring system, demonstrating low-level programming skills and efficient memory management.</p>
+      </div>
+      <div class="box">
+        <h1 class="headings">SQL</h1>
+        <p><b>1- Student Management System</b><br> This desktop application uses SQL for data management and allows efficient handling of student records. Users can add, update, and delete student information, as well as search for specific students quickly. The system supports features like tracking grades, attendance, and courses, offering a comprehensive view of each student's academic progress. It demonstrates skills in database design, query optimization, and user-friendly interface development.</p>
+      </div>
+      <div class="box">
+        <h1 class="headings">Website Development</h1>
+        <p>I create custom websites that look great and work well. I build sites that are easy to use and responsive on
+          any device. I use modern tools like <b>HTML, CSS, and JavaScript</b> to make your site fast and secure. Whether you
+          need a simple page or a complex application, I can help bring your ideas to life. Let's work together to make
+          a website that suits your needs!</p>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Contact Me</h2>
-      <div class="row">
-        <div class="col-md-6 mx-auto">
-          <form>
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Enter your name">
-            </div>
-            <div class="form-group">
-              <label for="email">Email address</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter your email">
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block">Submit</button>
-          </form>
-        </div>
-      </div>
-    </div>
+  <section id="contact">
+    <h1 class="headings">CONTACT</h1>
+    <form action="" onsubmit="sendEmail(); reset(); return false;" class="form">
+      <input type="text" id="Name" name="name" class="input" placeholder="Enter Your Name" required>
+      <input type="email" name="email" class="input" id="email" placeholder="Enter Your Email" required>
+      <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+      <input type="submit" value="SEND" id="send">
+    </form>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <div class="container">
-      <p>&copy; 2024 My Portfolio</p>
-    </div>
-  </footer>
-
-  <!-- Bootstrap JS, Popper.js, and jQuery -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="contact.js"></script>
 </body>
+
 </html>
